@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  overflow: hidden; /* Скрыть прокрутку */
+  margin: 0; /* Убираем отступы */
+  background: linear-gradient(135deg, #16062c, #1f033a); /* Статичный градиент */
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpg');
+  background-size: cover;
+  filter: blur(10px) brightness(70%);
+  transform: scale(1.2);
+  z-index: -2;
+}
+
+.datetime-container {
+  background-color: rgba(40, 40, 40, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  position: relative; /* Для наложения на фон */
+  z-index: 1; /* Поверх фона */
+}
+
+.time {
+  display: flex; /* Используем flexbox для выравнивания */
+  justify-content: center; /* Центрируем содержимое */
+  font-size: 18em; /* Увеличен размер шрифта для часов */
+  margin: 0;
+}
+
+.time-block {
+  margin: 0 10px; /* Отступы между блоками времени */
+  background-color: rgba(10, 10, 10, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  position: relative; /* Для наложения на фон */
+  z-index: 2; /* Поверх фона */
+}
+
+.time-separator {
+  margin: 10px; /* Отступы между блоками времени */
+  position: relative; /* Для наложения на фон */
+  z-index: 2; /* Поверх фона */
+}
+
+.date {
+  font-size: 4em; /* Размер шрифта для даты */
+  margin-top: 30px; /* Отступ сверху */
+}

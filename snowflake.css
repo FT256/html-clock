@@ -1,0 +1,28 @@
+.snowflake {
+    position: absolute;
+    top: -10em;
+    color: white;
+    font-size: 1em;
+    pointer-events: none; /* Чтобы снежинки не мешали взаимодействию с другими элементами */
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: -1; /* Поверх фона */
+    }
+    
+    /* Ключевые кадры для вращения */
+    @keyframes snowflakeRotate {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+    }
+    
+    @keyframes snowflakeInvertRotate {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(-360deg);
+    }
+    }
